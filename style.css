@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#board-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+    border: 1px solid #000;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #99c2ff;
+    cursor: pointer;
+}
+
+.ship {
+    background-color: #003366;
+}
+
+.hit {
+    background-color: #ff6666;
+}
+
+.miss {
+    background-color: #99cc99;
+}
